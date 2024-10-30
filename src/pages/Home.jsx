@@ -12,7 +12,7 @@ import { CustomButton } from "../components";
 const Home = () => {
     const snap = useSnapshot(state);
   return (
-    <AnimatePresence>
+    <AnimatePresence className="bg-gray-800">
         {snap.intro && (
             <motion.section className="home" {...slideAnimation('left')}>
                 <motion.header {...slideAnimation("down")}>
